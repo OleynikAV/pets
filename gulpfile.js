@@ -19,11 +19,12 @@ const ftp = require('vinyl-ftp');
 
 //Порядок подключения css файлов
 const cssFiles = [
+    'node_modules/bootstrap/dist/css/bootstrap.min.css',
+    'node_modules/slick-carousel/slick/slick.css',
     'node_modules/normalize.css/normalize.css',
    './src/scss/style.scss',
    './src/scss/header.scss',
    './src/scss/main.scss',
-    './src/scss/aside.scss',
    './src/scss/footer.scss',
    './src/scss/media.scss',
 
@@ -32,6 +33,7 @@ const cssFiles = [
 //Порядок подключения js файлов
 const jsFiles = [
    'node_modules/jquery/dist/jquery.min.js',
+    'node_modules/slick-carousel/slick/slick.min.js',
    './src/js/customs.js',
 ];
 
