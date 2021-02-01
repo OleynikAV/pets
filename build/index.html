@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <header>
+        <div class="container-flex">
+            <div class="container-flex__row --justify-space-between">
+                <div class="logo">
+                    <a href="#">
+                        <svg fill="none" viewBox="0 0 162 118" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="162" height="118" fill="url(#a)"/>
+                            <defs>
+                                <pattern id="a" width="1" height="1" patternContentUnits="objectBoundingBox">
+                                    <use transform="scale(.0061728 .0084746)" xlink:href="#b"/>
+                                </pattern>
+                                <image id="b" width="162" height="118" xlink:href="data:image/png;base64,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"/>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio </a></li>
+                        <li class="--NavButton"><a href="#">Connect Wallet</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-flex">
+            <div class="form">
+                <form action="">
+                    <div class="--search">
+                        <label for="--search">
+                            <input  id="--search"  type="search" name="search" placeholder="Token Contract Search...">
+                            <button type="button" id="button-search">
+                                <svg fill="none" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m27.125 24.5h-1.3825l-0.49-0.4725c1.715-1.995 2.7475-4.585 2.7475-7.4025 0-6.2825-5.0925-11.375-11.375-11.375s-11.375 5.0925-11.375 11.375 5.0925 11.375 11.375 11.375c2.8175 0 5.4075-1.0325 7.4025-2.7475l0.4725 0.49v1.3825l8.75 8.7325 2.6075-2.6075-8.7325-8.75zm-10.5 0c-4.3575 0-7.875-3.5175-7.875-7.875s3.5175-7.875 7.875-7.875 7.875 3.5175 7.875 7.875-3.5175 7.875-7.875 7.875z" fill="#22B2B1"/>
+                                </svg>
+
+                            </button>
+                        </label>
+                    </div><!--search-->
+                    <div class="--token-pair --input-amount">
+                        <label class="--input-description" for="--token-pair">
+                            <p>Token Pair:</p>
+                            <input id="--token-pair"  type="text" name="Token Pair" placeholder="DEXT/ETH">
+                        </label>
+                    </div><!--token-pair-->
+                    <div class="--token-amount --input-amount">
+                        <label class="--input-description" for="--token-pair">
+                            <p>Token Amount:</p>
+                            <input id="--token-amount"  type="text" name="Token Amount" placeholder="#___">
+                        </label>
+                    </div><!--token-amount-->
+                    <div class="--token-pair --input-amount">
+                        <label class="--input-description" for="--token-pair">
+                            <p>ETH Amount:</p>
+                            <input id="--eth-amount" class="--token-pair" type="text" name="ETH Amount" placeholder="#___">
+                        </label>
+                    </div><!--token-pair-->
+                    <div class="container-flex__row --justify-center --margin-top-mobile">
+                        <div class="text-switch-toggle ">
+                            <p class="--title-switch-toggle">Uniswap</p>
+                        </div>
+                        <div class="input-switch-toggle --align-items-center">
+                            <input type="checkbox" id="cbx"/>
+                            <label for="cbx" class="toggle"><span></span></label>
+                        </div>
+                        <div class="text-switch-toggle">
+                            <p class="--title-switch-toggle --text-toggle-select">SushiSwap</p>
+                        </div>
+                    </div><!--container-flex__row-->
+                    <div class="container-flex__row">
+
+                        <div class="block --left-block --buy-if">
+                            <p class="block--title">Buy if</p>
+                            <div class="container-flex__row --justify-space-between block--section">
+                                <div class="block--section-toggle">
+                                    <div class="container-flex__row">
+                                        <div class="input-switch-toggle --align-items-center">
+                                            <input type="checkbox" id="cbx_two"/>
+                                            <label for="cbx_two" class="toggle"><span></span></label>
+                                        </div>
+                                        <div class="--input-switch-toggle-title">
+                                            <p>price</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block--section-input">
+                                    <label for="--buy-price-amount">
+                                        <input id="--buy-price-amount" name="buy amout price" type="text" placeholder="$ 0.69">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="container-flex__row --justify-space-between block--section">
+                                <div class="block--section-toggle">
+                                    <div class="container-flex__row">
+                                        <div class="input-switch-toggle --align-items-center">
+                                            <input type="checkbox" id="cbx_three"/>
+                                            <label for="cbx_three" class="toggle"><span></span></label>
+                                        </div>
+                                        <div class="--input-switch-toggle-title">
+                                            <p>% up</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block--section-input">
+                                    <label for="--buy-percent-up">
+                                        <input id="--buy-percent-up" type="text" name="buy percent up" placeholder="___%">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="container-flex__row --justify-space-between block--section">
+                                <div class="block--section-toggle">
+                                    <div class="container-flex__row">
+                                        <div class="input-switch-toggle --align-items-center">
+                                            <input type="checkbox" id="cbx_foo"/>
+                                            <label for="cbx_foo" class="toggle"><span></span></label>
+                                        </div>
+                                        <div class="--input-switch-toggle-title">
+                                            <p>% down</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block--section-input">
+                                    <label for="--buy-percent-down">
+                                        <input id="--buy-percent-down" type="text" name="but percent down" placeholder="___%">
+
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="block --right-block --buy-if">
+                            <p class="block--title">SELL IF</p>
+                            <div class="container-flex__row --justify-space-between block--section">
+                                <div class="block--section-toggle">
+                                    <div class="container-flex__row">
+                                        <div class="input-switch-toggle --align-items-center">
+                                            <input type="checkbox" id="cbx_five"/>
+                                            <label for="cbx_five" class="toggle"><span></span></label>
+                                        </div>
+                                        <div class="--input-switch-toggle-title">
+                                            <p>price</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block--section-input">
+                                    <label for="--self-price-amount">
+                                        <input id="--self-price-amount" type="text" name="self price amount" placeholder="$ 0.69">
+
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="container-flex__row --justify-space-between block--section">
+                                <div class="block--section-toggle">
+                                    <div class="container-flex__row">
+                                        <div class="input-switch-toggle --align-items-center">
+                                            <input type="checkbox" id="cbx_six"/>
+                                            <label for="cbx_six" class="toggle"><span></span></label>
+                                        </div>
+                                        <div class="--input-switch-toggle-title">
+                                            <p>% up</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block--section-input">
+                                    <label for="--self-percent-up">
+                                        <input id="--self-percent-up" type="text"  name="self percent up" placeholder="___%">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="container-flex__row --justify-space-between block--section">
+                                <div class="block--section-toggle">
+                                    <div class="container-flex__row">
+                                        <div class="input-switch-toggle --align-items-center">
+                                            <input type="checkbox" id="cbx_seven"/>
+                                            <label for="cbx_seven" class="toggle"><span></span></label>
+                                        </div>
+                                        <div class="--input-switch-toggle-title">
+                                            <p>% down</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block--section-input">
+                                    <label for="--self-percent-down">
+                                        <input id="--self-percent-down" type="text" name="self percent down" placeholder="___%">
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div><!--container-flex__row-->
+                    <div class="form--footer">
+                        <div class="container-flex__row form-footer--indent-top">
+                            <div class="form--footer-block">
+                                <div class="container-flex__row">
+                                    <div class="input-switch-toggle --align-items-center">
+                                        <input type="checkbox" id="cbx_eight"/>
+                                        <label for="cbx_eight" class="toggle"><span></span></label>
+                                    </div>
+                                    <div class="--input-switch-toggle-title --text-capitalize">
+                                        <p>Cap Gas Cost At</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form--footer-block form-footer--gwei">
+                                    <div class="container-flex__row">
+                                        <div class="form-footer--input">
+                                            <label for="--input-footer-gwei">
+                                                <input  id="--input-footer-gwei" type="text" name="gwe" placeholder="XXX">
+                                            </label>
+                                        </div>
+                                        <div class="form-footer-input--title">
+                                            <p>GWEI</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            <div class="form--footer-block " id="--form-adp-margin">
+                                <div class="container-flex__row">
+                                    <div class="input-switch-toggle --align-items-center" >
+                                        <input type="checkbox" id="cbx_nine"/>
+                                        <label for="cbx_nine" class="toggle"><span></span></label>
+                                    </div>
+                                    <div class="--input-switch-toggle-title --text-capitalize --text-capitalize-mobile" id="--text-capitalize-mobile">
+                                        <p>Dynamic Transaction Threshold</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-button--block">
+                            <button class="form-button" type="submit">START BOT</button>
+                        </div>
+
+                    </div><!--form--footer-->
+
+                </form>
+            </div>
+        </div>
+    </main>
+    <aside id="asid--adaptive">
+        <div class="aside--head">
+            <p>Current <br> Bot Operations</p>
+        </div>
+        <div class="aside--footer">
+            <ul>
+                <li>Token Pair: <span>XXXX</span></li>
+                <li>DEXT Used: <span>XXXX</span></li>
+                <li>Token Amount: <span>XXXX</span></li>
+                <li>ETH Amount: <span>XXXX</span></li>
+                <li>BUY IF: <span>XXXX</span></li>
+                <li>SELL IF: <span>XXXX</span></li>
+                <li>Gas Cap: <span>XXXX</span></li>
+                <li>Dynamic Threshold: <span>XXXX</span></li>
+            </ul>
+            <button class="form-button --button-aside">CANCEL</button>
+        </div>
+
+
+    </aside>
+    <footer>
+        <div class="footer__social-link --justify-space-between">
+            <a href="#" class="__social-link-telegram">
+
+                <svg fill="none" viewBox="0 0 47 40" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m43.551 0.25754-41.37 15.953c-2.8233 1.134-2.807 2.709-0.518 3.4114l10.621 3.3133 24.575-15.505c1.162-0.707 2.2237-0.32667 1.351 0.448l-19.91 17.969h-0.0047l0.0047 0.0023-0.7327 10.948c1.0734 0 1.547-0.4923 2.149-1.0733l5.159-5.0167 10.731 7.9264c1.9787 1.0896 3.3997 0.5296 3.892-1.8317l7.0444-33.199c0.721-2.891-1.1037-4.2-2.9913-3.346z" fill="#22B2B1"/>
+                    <path d="m43.551 0.25754-41.37 15.953c-2.8233 1.134-2.807 2.709-0.518 3.4114l10.621 3.3133 24.575-15.505c1.162-0.707 2.2237-0.32667 1.351 0.448l-19.91 17.969h-0.0047l0.0047 0.0023-0.7327 10.948c1.0734 0 1.547-0.4923 2.149-1.0733l5.159-5.0167 10.731 7.9264c1.9787 1.0896 3.3997 0.5296 3.892-1.8317l7.0444-33.199c0.721-2.891-1.1037-4.2-2.9913-3.346z" fill="url(#a)"/>
+                    <defs>
+                        <linearGradient id="a" x1="34.794" x2="-6.1823" y1="-14.994" y2="42.116" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EE0979" offset=".10101"/>
+                            <stop stop-color="#D02281" offset=".1942"/>
+                            <stop stop-color="#965291" offset=".41224"/>
+                            <stop stop-color="#7F6597" offset=".52155"/>
+                            <stop stop-color="#67799E" offset=".61563"/>
+                            <stop stop-color="#4198A8" offset=".79677"/>
+                            <stop stop-color="#22B2B1" offset=".94066"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+
+            </a>
+            <a href="#" charset="__social-link-m">
+
+                <svg fill="none" viewBox="0 0 50 39" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m6.5076 7.9567c0.02906-0.2975-0.01165-0.5977-0.11888-0.87661s-0.27801-0.52879-0.49869-0.72969l-4.5693-5.5278v-0.82266h14.202l10.982 24.153 9.6541-24.153h13.544v0.82266l-3.9096 3.7605c-0.1653 0.12586-0.2932 0.29455-0.3701 0.48792-0.0768 0.19337-0.0996 0.4041-0.0659 0.6095v27.639c-0.0337 0.2054-0.0109 0.4161 0.0659 0.6095 0.0769 0.1934 0.2048 0.3621 0.3701 0.4879l3.8189 3.7605v0.8227h-19.218v-0.8227l3.9615-3.8515c0.3858-0.387 0.3858-0.5089 0.3858-1.0974v-22.336l-11.012 28.036h-1.4896l-12.805-28.036v18.788c-0.11184 0.7918 0.15237 1.5852 0.70994 2.1542l5.1464 6.2594v0.8227h-14.588v-0.8129l5.1464-6.2692c0.54624-0.569 0.80073-1.3721 0.65809-2.1542v-21.724z" fill="#22B2B1"/>
+                    <path d="m6.5076 7.9567c0.02906-0.2975-0.01165-0.5977-0.11888-0.87661s-0.27801-0.52879-0.49869-0.72969l-4.5693-5.5278v-0.82266h14.202l10.982 24.153 9.6541-24.153h13.544v0.82266l-3.9096 3.7605c-0.1653 0.12586-0.2932 0.29455-0.3701 0.48792-0.0768 0.19337-0.0996 0.4041-0.0659 0.6095v27.639c-0.0337 0.2054-0.0109 0.4161 0.0659 0.6095 0.0769 0.1934 0.2048 0.3621 0.3701 0.4879l3.8189 3.7605v0.8227h-19.218v-0.8227l3.9615-3.8515c0.3858-0.387 0.3858-0.5089 0.3858-1.0974v-22.336l-11.012 28.036h-1.4896l-12.805-28.036v18.788c-0.11184 0.7918 0.15237 1.5852 0.70994 2.1542l5.1464 6.2594v0.8227h-14.588v-0.8129l5.1464-6.2692c0.54624-0.569 0.80073-1.3721 0.65809-2.1542v-21.724z" fill="url(#a)"/>
+                    <defs>
+                        <linearGradient id="a" x1="37.208" x2="-2.8652" y1="-14.93" y2="43.922" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EE0979" offset=".10101"/>
+                            <stop stop-color="#D02281" offset=".1942"/>
+                            <stop stop-color="#965291" offset=".41224"/>
+                            <stop stop-color="#7F6597" offset=".52155"/>
+                            <stop stop-color="#67799E" offset=".61563"/>
+                            <stop stop-color="#4198A8" offset=".79677"/>
+                            <stop stop-color="#22B2B1" offset=".94066"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+
+            </a>
+            <a href="#" class="__social-link-twitch">
+
+                <svg fill="none" viewBox="0 0 49 39" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m48.703 4.6327c-1.7651 0.76154-3.6861 1.3096-5.6647 1.5231 2.0543-1.2206 3.5926-3.1488 4.3264-5.4231-1.9276 1.1469-4.0394 1.9511-6.2415 2.3769-0.9204-0.98408-2.0336-1.768-3.2702-2.303-1.2366-0.53499-2.5701-0.80956-3.9174-0.80658-5.4513 0-9.8354 4.4192-9.8354 9.8423 0 0.76157 0.0923 1.5231 0.2423 2.2558-8.1625-0.4269-15.442-4.3269-20.282-10.298-0.88186 1.5064-1.344 3.2217-1.3383 4.9673 0 3.4154 1.7363 6.4269 4.3841 8.1981-1.5604-0.0615-3.0842-0.4904-4.4475-1.2519v0.1211c0 4.7827 3.3804 8.7462 7.8856 9.6577-0.84596 0.2198-1.7162 0.3322-2.5901 0.3346-0.64031 0-1.246-0.0634-1.8575-0.15 1.246 3.9 4.8744 6.7327 9.1951 6.825-3.3804 2.6481-7.6145 4.2058-12.212 4.2058-0.8249 0-1.5864-0.0289-2.3766-0.1212 4.361 2.7981 9.5354 4.4135 15.108 4.4135 18.09 0 27.989-14.988 27.989-27.998 0-0.4269 0-0.8538-0.0289-1.2807 1.9152-1.4019 3.5938-3.1385 4.9321-5.0885z" fill="#22B2B1"/>
+                    <path d="m48.703 4.6327c-1.7651 0.76154-3.6861 1.3096-5.6647 1.5231 2.0543-1.2206 3.5926-3.1488 4.3264-5.4231-1.9276 1.1469-4.0394 1.9511-6.2415 2.3769-0.9204-0.98408-2.0336-1.768-3.2702-2.303-1.2366-0.53499-2.5701-0.80956-3.9174-0.80658-5.4513 0-9.8354 4.4192-9.8354 9.8423 0 0.76157 0.0923 1.5231 0.2423 2.2558-8.1625-0.4269-15.442-4.3269-20.282-10.298-0.88186 1.5064-1.344 3.2217-1.3383 4.9673 0 3.4154 1.7363 6.4269 4.3841 8.1981-1.5604-0.0615-3.0842-0.4904-4.4475-1.2519v0.1211c0 4.7827 3.3804 8.7462 7.8856 9.6577-0.84596 0.2198-1.7162 0.3322-2.5901 0.3346-0.64031 0-1.246-0.0634-1.8575-0.15 1.246 3.9 4.8744 6.7327 9.1951 6.825-3.3804 2.6481-7.6145 4.2058-12.212 4.2058-0.8249 0-1.5864-0.0289-2.3766-0.1212 4.361 2.7981 9.5354 4.4135 15.108 4.4135 18.09 0 27.989-14.988 27.989-27.998 0-0.4269 0-0.8538-0.0289-1.2807 1.9152-1.4019 3.5938-3.1385 4.9321-5.0885z" fill="url(#a)"/>
+                    <defs>
+                        <linearGradient id="a" x1="36.463" x2="-3.9067" y1="-14.93" y2="43.148" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EE0979" offset=".10101"/>
+                            <stop stop-color="#D02281" offset=".1942"/>
+                            <stop stop-color="#965291" offset=".41224"/>
+                            <stop stop-color="#7F6597" offset=".52155"/>
+                            <stop stop-color="#67799E" offset=".61563"/>
+                            <stop stop-color="#4198A8" offset=".79677"/>
+                            <stop stop-color="#22B2B1" offset=".94066"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+
+            </a>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>
+

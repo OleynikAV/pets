@@ -1,0 +1,78 @@
+*{
+  box-sizing: border-box;
+  outline: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  max-width: 1920px;
+  min-width: 320px;
+  background: #222F3F;
+  margin: 0 auto;
+}
+.container-flex{
+  max-width: 1200px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container-flex__aside{
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container-flex__fluid{
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container-flex__row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.--justify-space-between{
+  justify-content: space-between;
+}
+.--justify-center{
+  justify-content: center;
+}
+.--align-items-center{
+  display: flex;
+  align-items: center;
+}
+.--text-lower-case{
+  p{
+    text-transform: lowercase;
+  }
+}
+.--text-capitalize{
+  p{
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+.form-footer--indent-top{
+  padding-top: 10px;
+}
+
+$fontsFamily:'Poppins', sans-serif;
+$fontsSize: 20px;
+$fontsHeight: 30px;
+$fontsStyle: normal;
+$fontsWeight: normal;
+$FontsColorWhite: #FFFFFF;
+$FontsColorWhiteType2: #F7F7FC;
+$FontsColorAside: #F8F9F9;
+$FontsColor--amount:#90979F;
+$FontsColor--input:#707070;
+$FontsBgColor--input:#D1D1D1;
+$FontsInputColorBorder:#707070;
+$primary: #4F2EDC;
+$primary-light: #947ADA;
+$gray: #9A9999;
+$ColorTextToggleSelect:  #22B2B1;
+$SectionBgColor: #1A2634;
+$SectionBshwColor: 4px 0px 4px rgba(34, 178, 177, 0.5), 0px 4px 4px rgba(34, 178, 177, 0.5);

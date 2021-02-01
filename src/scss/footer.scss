@@ -1,0 +1,15 @@
+@import "style";
+.footer__social-link{
+  width: 320px;
+  margin: 0 auto;
+  margin-top:190px;
+  margin-bottom: 60px;
+  display: flex;
+  a{
+    text-decoration: none;
+    svg{
+      width: 50px;
+      height: 40px;
+    }
+  }
+}

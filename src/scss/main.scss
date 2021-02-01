@@ -1,0 +1,431 @@
+@import "style";
+.--search{
+  margin-top: 70px;
+  margin-bottom: 60px;
+  label{
+    position: relative;
+  }
+  input{
+    max-width: 1170px;
+    width: 100%;
+    height: 70px;
+    padding-left: 30px;
+    background: #1A2634;
+    border-radius: 70px;
+    position: relative;
+    font-family: $fontsFamily;
+    font-style: $fontsStyle;
+    font-weight: $fontsWeight;
+    font-size: $fontsSize;
+    line-height: $fontsHeight;
+    color: #90979F;
+    border: none;
+    box-shadow: $SectionBshwColor;
+    &::-webkit-search-cancel-button{
+      -webkit-appearance: none;
+    }
+  }
+  button{
+    border: none;
+    background: none;
+    position: absolute;
+    top: -5px;
+    right: 30px;
+    cursor: pointer;
+    svg{
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+}
+.--input-amount{
+  border-bottom:1px solid $FontsInputColorBorder ;
+  max-width: 770px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 16px;
+  display: flex;
+  p,input{
+    font-family: $fontsFamily;
+    font-style: $fontsStyle;
+    font-weight: $fontsWeight;
+    font-size: $fontsSize;
+    line-height: $fontsHeight;
+    color: #90979F;
+    display: inline-block;
+
+  }
+  input{
+    max-width: 170px;
+    width: 100%;
+    height: 55px;
+    color: $FontsColor--input;
+    background-color: $FontsBgColor--input;
+    border-radius: 40px;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    &::-webkit-inner-spin-button{
+      -webkit-appearance: none;
+    }
+
+  }
+  .--input-description{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+.input-switch-toggle{
+  width: 70px;
+  input{
+    display: none;
+  }
+}
+.--width-adp-toggle{
+}
+.--width-adp-toggle-two{
+}
+.text-switch-toggle{
+  padding-top: 5px;
+  margin: 0 20px;
+}
+.--title-switch-toggle{
+  font-family: $fontsFamily;
+  font-style: $fontsStyle;
+  font-weight: $fontsWeight;
+  font-size: 32px;
+  line-height: 48px;
+  color: $FontsColorWhite;
+}
+.--text-toggle-select{
+    color: $ColorTextToggleSelect;
+}
+.toggle{
+  position: relative;
+  display: block;
+  width: fit-content;
+  height: 20px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0,0,0);
+  &:before{
+    content: "";
+    position: relative;
+    top: 0;
+    left: 3px;
+    width: 60px;
+    height: 24px;
+    display: block;
+    background: #90979F;;
+    border-radius: 40px;
+    transition: background .2s ease;
+
+  }
+  span{
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 34px;
+    height: 34px;;
+    display: block;
+    background: #FAFAFA;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+    transition: all .2s ease;
+  }
+}
+#cbx:checked + .toggle{
+  &:before{
+    background: #22B2B1;
+    opacity: 0.5;
+  }
+  span{
+    background: #22B2B1;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+    transform: translateX(35px);
+    transition: all .2s cubic-bezier(.8,.4,.3,1.25), background .15s ease;
+    &:before{
+      transform: scale(1);
+      opacity: 0;
+      transition: all .4s ease;
+    }
+
+  }
+}
+#cbx_two:checked + .toggle{
+  &:before{
+    background: #22B2B1;
+    opacity: 0.5;
+  }
+  span{
+    background: #22B2B1;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+    transform: translateX(35px);
+    transition: all .2s cubic-bezier(.8,.4,.3,1.25), background .15s ease;
+    &:before{
+      transform: scale(1);
+      opacity: 0;
+      transition: all .4s ease;
+    }
+
+  }
+}
+#cbx_three:checked + .toggle{
+  &:before{
+    background: #22B2B1;
+    opacity: 0.5;
+  }
+  span{
+    background: #22B2B1;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+    transform: translateX(35px);
+    transition: all .2s cubic-bezier(.8,.4,.3,1.25), background .15s ease;
+    &:before{
+      transform: scale(1);
+      opacity: 0;
+      transition: all .4s ease;
+    }
+
+  }
+}
+#cbx_foo:checked + .toggle{
+  &:before{
+    background: #22B2B1;
+    opacity: 0.5;
+  }
+  span{
+    background: #22B2B1;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+    transform: translateX(35px);
+    transition: all .2s cubic-bezier(.8,.4,.3,1.25), background .15s ease;
+    &:before{
+      transform: scale(1);
+      opacity: 0;
+      transition: all .4s ease;
+    }
+
+  }
+}
+#cbx_five:checked + .toggle{
+  &:before{
+    background: #22B2B1;
+    opacity: 0.5;
+  }
+  span{
+    background: #22B2B1;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+    transform: translateX(35px);
+    transition: all .2s cubic-bezier(.8,.4,.3,1.25), background .15s ease;
+    &:before{
+      transform: scale(1);
+      opacity: 0;
+      transition: all .4s ease;
+    }
+
+  }
+}
+#cbx_six:checked + .toggle{
+  &:before{
+    background: #22B2B1;
+    opacity: 0.5;
+  }
+  span{
+    background: #22B2B1;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+    transform: translateX(35px);
+    transition: all .2s cubic-bezier(.8,.4,.3,1.25), background .15s ease;
+    &:before{
+      transform: scale(1);
+      opacity: 0;
+      transition: all .4s ease;
+    }
+
+  }
+}
+#cbx_seven:checked + .toggle{
+  &:before{
+    background: #22B2B1;
+    opacity: 0.5;
+  }
+  span{
+    background: #22B2B1;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+    transform: translateX(35px);
+    transition: all .2s cubic-bezier(.8,.4,.3,1.25), background .15s ease;
+    &:before{
+      transform: scale(1);
+      opacity: 0;
+      transition: all .4s ease;
+    }
+
+  }
+}
+#cbx_eight:checked + .toggle{
+  &:before{
+    background: #22B2B1;
+    opacity: 0.5;
+  }
+  span{
+    background: #22B2B1;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+    transform: translateX(35px);
+    transition: all .2s cubic-bezier(.8,.4,.3,1.25), background .15s ease;
+    &:before{
+      transform: scale(1);
+      opacity: 0;
+      transition: all .4s ease;
+    }
+
+  }
+}
+#cbx_nine:checked + .toggle{
+  &:before{
+    background: #22B2B1;
+    opacity: 0.5;
+  }
+  span{
+    background: #22B2B1;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+    transform: translateX(35px);
+    transition: all .2s cubic-bezier(.8,.4,.3,1.25), background .15s ease;
+    &:before{
+      transform: scale(1);
+      opacity: 0;
+      transition: all .4s ease;
+    }
+
+  }
+}
+.block{
+  max-width: 570px;
+  width: 100%;
+  height: 360px;
+  background: $SectionBgColor;
+  box-shadow: $SectionBshwColor;
+  border-radius: 14px;
+  padding: 5px;
+}
+.block--section{
+ padding: 0 30px;
+  border-bottom: 1px solid $FontsInputColorBorder;
+}
+.block--title{
+  font-family: $fontsFamily;
+  font-style: $fontsStyle;
+  font-weight: $fontsWeight;
+  font-size: 33px;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: $ColorTextToggleSelect;
+  text-align: center;
+
+}
+.block--section-input{
+  display: flex;
+  align-items: center;
+  input{
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background: $FontsBgColor--input;
+    font-family: $fontsFamily;
+    font-style: $fontsStyle;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: $FontsColor--input;
+    text-align: center;
+    &::-webkit-inner-spin-button{
+      -webkit-appearance: none;
+    }
+
+  }
+}
+.--input-switch-toggle-title{
+  p{
+    font-family: $fontsFamily;
+    font-style: $fontsStyle;
+    font-weight: $fontsWeight;
+    font-size: $fontsSize;
+    line-height: $fontsHeight;
+    text-transform: uppercase;
+    color: $FontsColorWhite;
+    margin-left: 24px;
+  }
+}
+.--left-block{
+  margin-left: 0;
+  margin-right: auto;
+}
+.--right-block{
+  margin-left: auto;
+  margin-right: 0;
+}
+.form--footer{
+  background: $SectionBgColor;
+  box-shadow: $SectionBshwColor;
+  border-radius: 11px;
+  max-width: 1170px;
+  width: 100%;
+  height: 215px;
+  margin-top: 30px;
+  padding: 0 35px;
+}
+.form-footer--input{
+  display: flex;
+  align-items: center;
+}
+.form-footer--gwei{
+  margin-left: 130px;
+  margin-right: 100px;
+  input{
+    border: none;
+    background: $FontsBgColor--input;
+    width: 60px;
+    height: 35px;
+    border-radius: 27px;
+    font-family: $fontsFamily;
+    font-style: $fontsStyle;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: $FontsInputColorBorder;
+    text-align: center;
+    margin-right: 24px;
+  }
+  p{
+    display: inline-block;
+    font-family: $fontsFamily;
+    font-style: $fontsStyle;
+    font-weight: $fontsWeight;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $FontsColorWhite;
+  }
+}
+.form-button--block{
+  text-align: center;
+}
+.form-button{
+  border: none;
+  max-width: 270px;
+  width: 100%;
+  height: 65px;
+  border-radius: 40px;
+  background: linear-gradient(220.55deg, #EE0979 3.15%, #D02281 14.24%, #965291 40.2%, #7F6597 53.21%, #67799E 64.41%, #4198A8 85.97%, #22B2B1 103.1%), #22B2B1;
+  font-family: $fontsFamily;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.75px;
+  color: $FontsColorWhiteType2;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 40px;
+}
